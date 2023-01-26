@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>关于搭建此博客的一些参考</title>
+      <link href="/2023/01/26/blog-related/"/>
+      <url>/2023/01/26/blog-related/</url>
+      
+        <content type="html"><![CDATA[<h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><p>要搭建博客首先要寻找合适的服务器，好在github和cloudflare都是白嫖的优秀对象。</p><p>参考该文章搭建了基于cloudflare pages服务的页面：<a href="https://www.dzdxtd.com/archives/703">Cloudflare Pages 搭建hexo</a></p><p>这样也就不需要白嫖cloudflare的cdn了，直接服务到位。</p><h1 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h1><p>这个blog用到了Butterfly主题，并在菜单、背景图、侧边栏、搜索、评论等方面进行了设置。</p><p>一方面参考了第三方教程：<a href="https://www.little-demon.cn/archives/16/">Hexo-Butterfly基础美化</a></p><p>另一方面参考了官方文档：<a href="https://butterfly.js.org/">Butterfly</a></p><p>其实原来想用毛玻璃css的，但是出了一些问题，也就没用。这里贴一下出处：<a href="https://hllqk.netlify.app/2022/08/11/hexo-butterfly-css/">hexo-butterfly-css</a></p><p><img src="/2023/01/26/blog-related/1674721420680.png" alt="别人的毛玻璃效果"></p><h1 id="其他配置（持续更新）"><a href="#其他配置（持续更新）" class="headerlink" title="其他配置（持续更新）"></a>其他配置（持续更新）</h1><h2 id="为文章添加资源"><a href="#为文章添加资源" class="headerlink" title="为文章添加资源"></a>为文章添加资源</h2><p>正常情况下文章无法使用相对路径，在使用网上的办法无果后，我查阅了官方文档：<a href="https://hexo.io/zh-cn/docs/asset-folders">资源文件夹</a></p><p>实际上应该用模版语法来添加图片，但是不方便编辑时预览，而且也不好写，不如在配置中加入&#x2F;修改下列参数，直接使用markdown语法添加图片</p><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#可以允许文章使用相对路径</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">marked:</span></span><br><span class="line">  <span class="attr">prependRoot:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">postAsset:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><h2 id="VScode插件推荐"><a href="#VScode插件推荐" class="headerlink" title="VScode插件推荐"></a>VScode插件推荐</h2><p>推荐插件：Hexo Utils </p><p>能提供快速查看博客文章结构的功能，也方便新增文章，同时能定向到引用的图片的位置，但是对我用的另一款插件Office Viewer无效。</p><p>当然啦，Office Viewer也是一款很棒的插件，能提供很多类型文件的预览和编辑功能</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 技术 </tag>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 参考 </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HelloWorld</title>
+      <link href="/2023/01/25/helloworld/"/>
+      <url>/2023/01/25/helloworld/</url>
+      
+        <content type="html"><![CDATA[<p>2023年1月25日，基于pages的博客正式成立。发布此文，以作纪念。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 纪念 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
